@@ -41,8 +41,6 @@ const addNewFilter = () => {
   const newFilter = `filter_${store.activeFilters.length + 1}`;
   store.addFilter(newFilter);
   let editedOldPath = route.path.split("/");
-  console.log(editedOldPath);
-  console.log(editedOldPath.indexOf("filter"));
   if (editedOldPath.indexOf("filter") !== -1)
     editedOldPath = editedOldPath.slice(0, editedOldPath.indexOf("filter"));
   const newPath =
